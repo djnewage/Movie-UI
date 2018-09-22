@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  max-width: 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* background */
+.bg {
+  position: fixed;
+ width: 100%;
+ height: 100vh;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ background-image: url(https://images.unsplash.com/photo-1520210599173-ba8e9fc44395?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=409b4277dad2ec4e6ce43758a01ef4bb&auto=format&fit=crop&w=668&q=80);
+ filter: blur(5.34px) brightness(0.51);
+ background-color: black;
+}
+
+
+/* container */
+
+.container {
+  display: flex;
+
+}
+
+/* sidebar */
+.sideBar{
+  text-align: center;
+  width: 30%;
+  margin: 0 30px;
+  /* height: 10%; */
+  /* overflow: scroll; */
+
+}
+.sideBar img{
+  margin-top: 25px;
+  border-radius: 45%;
+  -webkit-box-shadow: 0px 11px 33px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 11px 33px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 11px 33px -2px rgba(0,0,0,0.75);
+
+}
+
+.bio {
+  text-align: center;
+  line-height: 1.5;
+
+}
+
+.bio h1 {
+  /* margin: 20px; */
+
+}
+
+.bio li {
+  margin: 10px 0;
+}
+
+.bio li i{
+  padding: 0 10px;
+  transition: all .2s ease-in-out;
+}
+
+
+.bio .fas, .fa-clock {
+  font-size: 28px;
+
+}
+
+
+/* Achievements */
+
+.achievements {
+  padding-top: 30px;
+  margin: 0 auto;
+
+}
+
+.achievements button {
+  padding: 10px 45px;
+  background-color:  rgba(52,52, 47, 0.6);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+  font-size: 15px;
+  text-align:center;
+  margin: 0 auto;
+
+
+}
+
+.achievements button:hover {
+  padding: 10px 45px;
+  background-color:  #fff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.boxes1, .boxes2 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.box {
+  margin: 10px;
+  padding: 10px;
+}
+
+.box .fas {
+  background-color:  rgba(52,52, 47, 0.3);
+  /* opacity: 0.6; */
+  /* color: white; */
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 10%;
+  -webkit-box-shadow: 0px 11px 33px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 11px 33px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 11px 33px -2px rgba(0,0,0,0.75);
+transition: all .2s ease-in-out;
+
+}
+
+.box .fas:hover{
+  transform: scale(1.1);
+}
+
+.boxes1 .box1 .fas {
+  color: gold;
+}
+
+.boxes1 .box2 .fas {
+  /* color: #BFBFBF; */
+}
+
+.boxes2 .box3 .fas {
+  color: #1AD1E3;
+}
+
+.boxes2 .box4 .fas {
+  color: #ED54B9;
+}
+
+
+
+/* Main section */
+
+
+.main {
+  width: 100%;
+  background-color: #080b08;
+  opacity: 0.9;
+  margin-left: 3px;
+  overflow: hidden;
+}
+
+.main .box-art{
+  display: flex;
+  /* justify-content: space-around; */
+  /* position: relative; */
+  /* flex-wrap: wrap; */
+  overflow-y: scroll;
+  /* overflow-x: hidden; */
+}
+
+
+.main .box-art img {
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 11px 33px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 11px 33px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 11px 33px -2px rgba(0,0,0,0.75);
+
+}
+
+.main .box-art .movies {
+  text-align: center;
+}
+
+.main .box-art .movies h4 {
+  font-size: 13px;
+}
+
+.main .box-art .movies i {
+  margin-right: 3px;
+}
+
+
+
+.top, .bottom {
+  padding: 50px;
+  overflow: scroll;
+  width: 100%;
+  scroll-behavior: smooth;
+
+
+}
+
+.top .btn {
+  text-align: right;
+
+}
+.top .btn a:hover {
+  background: grey;
+  color: white;
+}
+
+.top .btn a {
+  background-color: #fff;
+  color: black;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 11px 33px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 11px 33px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 11px 33px -2px rgba(0,0,0,0.75);
+transition: all .2s ease-in-out;
+
+}
+
+.bottom {
+  background-color: rgba(26,26,26,0.4);
+
+}
+
+.movies {
+  /* border: 2px solid white; */
+  display: block;
+  margin: 15px 20px;
+
+}
+
+.movies img {
+  height: 300px;
+  width: 200px;
+  display: block;
+  /* border: 2px solid white; */
+}
+
+.movies .fa-star {
+  color: rgb(249, 209, 41);
+  margin-top: 10px;
+
+}
+
+
+.bottom {
+  background-color: rgba(26,26,26,0.8);
+
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+  }
+
+  .sideBar {
+    margin: 0 auto;
+  }
+  .bio {
+    /* display: flex; */
+    text-align: center;
+    margin: 0 auto;
+
+  }
+
+  .achievements h3{
+    
+  }
+
+
+  .achievements button {
+    padding: 10px 45px;
+    background-color:  rgba(52,52, 47, 0.6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    font-size: 15px;
+    text-align:center;
+    margin: 0 -45px;
+  }
+
+  .main {
+    margin-top: 20px;
+  }
+
+  .top .btn {
+    text-align: center;
+    padding: 50px 0;
+
+  }
+
+
+}
