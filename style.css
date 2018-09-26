@@ -177,6 +177,7 @@ transition: all .2s ease-in-out;
   /* justify-content: space-around; */
   /* position: relative; */
   /* flex-wrap: wrap; */
+  /* overflow-y: scroll; */
   overflow-x: scroll;
 }
 
@@ -205,7 +206,7 @@ box-shadow: 0px 11px 33px -2px rgba(0,0,0,0.75);
 
 .top, .bottom {
   padding: 50px;
-  overflow: scroll;
+  /* overflow: scroll; */
   width: 100%;
   scroll-behavior: smooth;
 
@@ -251,6 +252,13 @@ transition: all .2s ease-in-out;
   width: 200px;
   display: block;
   /* border: 2px solid white; */
+  opacity: .6;
+  transition: all .1s ease-in-out;
+}
+
+.movies img:hover {
+  transform: scale(1.1);
+  opacity: 1.8;
 }
 
 .movies .fa-star {
@@ -284,7 +292,7 @@ transition: all .2s ease-in-out;
   }
 
   .achievements h3{
-    
+
   }
 
 
